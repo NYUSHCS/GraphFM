@@ -1,5 +1,5 @@
 # GraphFM
-Official code for "GraphFM: A Comprehensive Benchmark for Graph Foundation Model". GraphFM is a comprehensive benchmark for Graph Foundation Model and is based on graph self-supervised learning (GSSL). It aims to research the homogenization and scalability of graph foundation models. 
+Official code for "GraphFM: A Comprehensive Benchmark for Graph Foundation Model". GraphFM is a comprehensive benchmark for Graph Foundation Models (GraphFMs) and is based on graph self-supervised learning (GSSL). It aims to research the homogenization and scalability of Graph FMs. 
 
 ## Overview of the Benchmark
 GraphFM provides a fair and comprehensive platform to evaluate existing GSSL works and facilitate future research.
