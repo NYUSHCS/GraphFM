@@ -229,6 +229,7 @@ class CCA_SSG(nn.Module):
             #out = self(batch.x, batch.edge_index)
 
             batch = batch.to("cpu")
+            init_mem = get_memory_usage(0, False)
             import dgl
             from utils import CustomDGLDataset
             dgl_data = CustomDGLDataset(dataset, batch)
