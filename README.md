@@ -31,7 +31,7 @@ You can run the `python main_optuna.py --type_model $model --dataset $dataset --
 You can train the model with `main.py` after obtaining the hyperparameters tuned by Optuna.
 
 ## 📱️Updates
-2024.6.6 Submitted out paper to NeurIPS2024 Dataset and Benchmark track.
+2024.6.6 Submitted our paper to NeurIPS2024 Dataset and Benchmark track.
 
 ## Reference
 
