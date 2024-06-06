@@ -28,7 +28,7 @@ The required packages can be installed by running `pip install -r requirements.t
 You can run the `python main_optuna.py --type_model $model --dataset $dataset --batch_type $batch_type` to get the best hyperparameters.
 
 ### Train the Main Code
-You can train the model with `main.py` after you getting the hyperparameters trained by optuna.
+You can train the model with `main.py` after obtaining the hyperparameters tuned by Optuna.
 
 ## 📱️Updates
 2024.6.6 Submitted out paper to NeurIPS2024 Dataset and Benchmark track.
