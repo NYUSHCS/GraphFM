@@ -447,6 +447,7 @@ class GraphMAE(_GraphModels):
             #out = self(batch.x, batch.edge_index)
 
             batch = batch.to("cpu")
+            init_mem = get_memory_usage(0, False)
             import dgl
             from utils import CustomDGLDataset
             x, x_mlp = batch.x.to(device), batch.x.to(device)
