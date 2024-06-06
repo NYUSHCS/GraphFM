@@ -52,7 +52,7 @@ class BaseOptions:
         parser.add_argument("--dropout_lp", type=float, default=0.5)
 
         parser.add_argument("--eval_batch_size", type=int, default=512)
-        parser.add_argument("--fast_split", type=bool, default=False)
+        parser.add_argument("--fast_split", type=bool, default=True)
 
         # parameters for ClusterGCN
         parser.add_argument("--num_parts", type=int, default=1500)
