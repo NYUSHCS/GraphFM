@@ -3,3 +3,5 @@ Official code for "GraphFM: A Comprehensive Benchmark for Graph Foundation Model
 
 ## Overview of the Benchmark
 GraphFM provides a fair and comprehensive platform to evaluate existing GSSL works and facilitate future research.
+
+![image](https://github.com/NYUSHCS/GraphFM/img/architecture.pdf)
