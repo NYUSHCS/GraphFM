@@ -31,8 +31,6 @@ def objective(trial):
     args.lr = trial.suggest_loguniform("lr", 1e-6, 1e-2)
     args.weight_decay = trial.suggest_loguniform("weight_decay", 1e-6, 1e-2)
     if args.type_model == "GraphMAE":
-        args.lr_f = trial.suggest_loguniform("lr_f", 1e-6, 1e-2)
-        args.weight_decay_f = trial.suggest_loguniform("weight_decay_f", 1e-6, 1e-2)
         args.num_heads = trial.suggest_categorical("num_heads", [1, 2, 4, 8])
         args.num_hidden = trial.suggest_categorical("num_hidden", [256, 512, 1024])
         args.attn_drop = trial.suggest_categorical("attn_drop", [0.0, 0.1, 0.2, 0.3, 0.4, 0.5])
@@ -42,8 +40,6 @@ def objective(trial):
         args.drop_edge_rate = trial.suggest_categorical("drop_edge_rate", [0.0, 0.05, 0.15, 0.20])
         args.alpha_l = trial.suggest_categorical("alpha_l", [1, 2, 3])
     elif args.type_model == "GraphMAE2":
-        args.lr_f = trial.suggest_loguniform("lr_f", 1e-6, 1e-2)
-        args.weight_decay_f = trial.suggest_loguniform("weight_decay_f", 1e-6, 1e-2)
         args.num_heads = trial.suggest_categorical("num_heads", [1, 2, 4, 8])
         args.num_hidden = trial.suggest_categorical("num_hidden", [256, 512, 1024])
         args.attn_drop = trial.suggest_categorical("attn_drop", [0.0, 0.1, 0.2, 0.3, 0.4, 0.5])
@@ -74,8 +70,6 @@ def objective(trial):
         args.dfr = trial.suggest_categorical("dfr", [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6])
         args.der = trial.suggest_categorical("der", [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6])
         args.hid_dim = trial.suggest_categorical("hid_dim", [128, 256, 512, 1024])
-        args.lr2 = trial.suggest_loguniform("lr2", 1e-6, 1e-2)
-        args.wd2 = trial.suggest_loguniform("wd2", 1e-6, 1e-2)
     elif args.type_model == "GCA":
         args.num_hidden = trial.suggest_categorical("num_hidden", [128, 256, 512, 1024])
         args.drop_edge_rate_1 = trial.suggest_categorical("drop_edge_rate_1", [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6])
@@ -86,8 +80,6 @@ def objective(trial):
         args.hid_dim = trial.suggest_categorical("hid_dim", [128, 256, 512, 1024, 2048])
         args.n_layers = trial.suggest_int("n_layers", 1, 4)
         args.temp = trial.suggest_categorical("temp", [0.4, 0.5, 0.6, 0.7, 0.8])
-        args.lr2 = trial.suggest_loguniform("lr2", 1e-6, 1e-2)
-        args.wd2 = trial.suggest_loguniform("wd2", 1e-6, 1e-2)
         args.lam = trial.suggest_loguniform("lam", 1e-6, 1e-2)
 
 

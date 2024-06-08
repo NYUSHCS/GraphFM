@@ -84,8 +84,6 @@ class GraphMAE2(_GraphModels):
         self.num_dec_layers = args.num_dec_layers
         self.zero_init = args.dataset in ("cora", "pubmed", "citeseer")
 
-        self.lr_f = args.lr_f
-        self.weight_decay_f = args.weight_decay_f
         self.max_epoch_f = args.max_epoch_f
 
         assert self.num_hidden % self.nhead == 0

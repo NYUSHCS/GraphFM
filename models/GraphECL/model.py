@@ -240,8 +240,6 @@ class GraphECL(nn.Module):
         device = input_dict["device"]
         save_path = input_dict["save_path"]
         num_class = input_dict["num_class"]
-        lr2 = input_dict["lr2"]
-        wd2 = input_dict["wd2"]
         self.data = input_dict["data"]
         self.pyg_data = input_dict["pyg_data"]
         self.x = input_dict["x"]
@@ -272,8 +270,6 @@ class GraphECL(nn.Module):
         self.split_masks = split_masks
         self.y = y
         self.device = device
-        self.lr2 = lr2
-        self.wd2 = wd2
         self.num_class = num_class
         self.save_path = save_path
 

@@ -101,8 +101,6 @@ class CCA_SSG(nn.Module):
         der = input_dict["der"]
         lambd = input_dict["lambd"]
         N = input_dict["N"]
-        lr2 = input_dict["lr2"]
-        wd2 = input_dict["wd2"]
         num_class = input_dict["num_class"]
         save_path = input_dict["save_path"]
         self.dgl_data = input_dict["dgl_data"]
@@ -117,8 +115,6 @@ class CCA_SSG(nn.Module):
         self.x = x
         self.y = y
         self.num_class = num_class
-        self.lr2 = lr2
-        self.wd2 = wd2
         self.split_masks = split_masks
         self.save_path = save_path
 

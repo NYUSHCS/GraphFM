@@ -251,8 +251,6 @@ class trainer():
                                   args.use_mlp, args.moving_average_decay, args.num_MLP, args.lambda_loss, args.lam)
             self.neg_sample = args.neg_sample
             self.pos_sample = args.pos_sample
-            self.lr2 = args.lr2
-            self.wd2 = args.wd2
             self.num_class = args.num_classes
             self.predictor_lp = LPDecoder(args.hid_dim, args.decode_channels_lp, 1, args.num_layers_lp, args.dropout_lp)
         else:
@@ -370,8 +368,6 @@ class trainer():
             input_dict["der"] = self.der
             input_dict["lambd"] = self.lambd
             input_dict["N"] = self.N
-            input_dict["lr2"] = self.lr2
-            input_dict["wd2"] = self.wd2
             input_dict["num_class"] = self.num_class
             input_dict["dgl_data"] = self.dgl_data
         elif self.type_model == "BGRL":
@@ -392,8 +388,6 @@ class trainer():
             input_dict["pos_sample"] = self.pos_sample
             input_dict["neg_sample"] = self.neg_sample
             input_dict["num_class"] = self.num_class
-            input_dict["lr2"] = self.lr2
-            input_dict["wd2"] = self.wd2
             input_dict["dgl_data"] = self.dgl_data
         else:
             Exception(f"the model of {self.type_model} has not been implemented")
