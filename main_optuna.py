@@ -30,6 +30,9 @@ def objective(trial):
     args = BaseOptions().initialize()
     args.lr = trial.suggest_loguniform("lr", 1e-6, 1e-2)
     args.weight_decay = trial.suggest_loguniform("weight_decay", 1e-6, 1e-2)
+    args.batch_size = trial.suggest_categorical("batch_size", [512, 1024, 2048, 4096, 10000, 20000])
+    args.decode_channels_lp = trial.suggest_categorical("decode_channels_lp", [128, 256, 512, 1024])
+    args.decode_layers_lp = trial.suggest_categorical("decode_layers_lp", [1, 2, 4, 8])
     if args.type_model == "GraphMAE":
         args.num_heads = trial.suggest_categorical("num_heads", [1, 2, 4, 8])
         args.num_hidden = trial.suggest_categorical("num_hidden", [256, 512, 1024])
