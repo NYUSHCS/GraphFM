@@ -1,6 +1,7 @@
 import torch
 from sklearn.metrics import roc_auc_score, average_precision_score
 
+from tqdm import tqdm
 from utils import do_edge_split_direct
 
 import torch.nn.functional as F
