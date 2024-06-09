@@ -213,8 +213,6 @@ class S2GAE(_GraphModels):
         self.predictor_lp = input_dict["predictor_lp"].to(self.device)
 
         edge_index = input_dict["edge_index"]
-        self.model.reset_parameters()
-        self.predictor_lp.reset_parameters()
 
         loss, model, predictor = self.model_train(self.model, self.predictor_lp, self.x, edge_index, optimizer)
         self.emb_model = model
