@@ -45,3 +45,16 @@ You can train the model with `main.py` after obtaining the hyperparameters tuned
 | 6      | [GraphMAE: Self-Supervised Masked Graph Autoencoders](https://arxiv.org/abs/2205.10803)  |  GraphMAE   |   KDD 2022    |
 | 7      | [GraphMAE2: A Decoding-Enhanced Masked Self-Supervised Graph Learner](https://arxiv.org/abs/2304.04779)  |   GraphMAE2    |   WWW 2023    |
 | 8      | [S2GAE: Self-Supervised Graph Autoencoders are Generalizable Learners with Graph Masking](https://dl.acm.org/doi/abs/10.1145/3539597.3570404) |   S2GAE    |    WSDM 2023    |
+
+## Citation
+
+If you find this repo useful, please star the repo and cite:
+
+```bibtex
+@article{xu2024graphfm,
+      title={GraphFM: A Comprehensive Benchmark for Graph Foundation Model},
+      author={Xu, Yuhao and Liu, Xinqi and Duan, Keyu and Fang, Yi and Chuang, Yu-Neng and Zha, Daochen and Tan, Qiaoyu},
+      journal={arXiv preprint arXiv:2406.08310},
+      year={2024}
+    }
+```
